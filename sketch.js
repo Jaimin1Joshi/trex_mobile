@@ -65,8 +65,8 @@ function setup() {// to add before draw procedures
 function draw(){
   background("lightblue");
   // scoreboard
-  text(count ,555,15);
-  text("HI:" + hicount,495,15);
+  text(count ,width-50,15);
+  text("HI:" + hicount,width-100,15);
   if(gamestate===play){
     trex.changeAnimation("run",trexrunning);
     if((keyDown("space") || touches.length>0) && trex.y>height-100){
